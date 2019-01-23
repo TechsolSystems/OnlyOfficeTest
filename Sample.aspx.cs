@@ -44,7 +44,7 @@ namespace OnlineEditorsExample
         {
             get
             {
-                var uri = new UriBuilder(HttpContext.Current.Request.Url) {Query = ""};
+                var uri = new UriBuilder(HttpContext.Current.Request.Url) { Query = "" };
                 var requestHost = HttpContext.Current.Request.Headers["Host"];
                 if (!string.IsNullOrEmpty(requestHost))
                     uri = new UriBuilder(uri.Scheme + "://" + requestHost);
@@ -52,14 +52,14 @@ namespace OnlineEditorsExample
                 return uri;
             }
         }
-        
+
         private static long MaxFileSize
         {
             get
             {
                 long size;
                 long.TryParse(WebConfigurationManager.AppSettings["filesize-max"], out size);
-                return size > 0 ? size : 5*1024*1024;
+                return size > 0 ? size : 5 * 1024 * 1024;
             }
         }
 
