@@ -40,6 +40,7 @@ namespace OnlineEditorsExample
 {
     public partial class Sample : Page
     {
+        //some comments added
         public static UriBuilder Host
         {
             get
