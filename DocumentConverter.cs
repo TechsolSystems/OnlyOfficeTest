@@ -299,7 +299,7 @@ namespace ASC.Api.DocumentConverter
 
             switch (errorCode)
             {
-                case 0:	
+                case 0:
                     //No errors.
                     break;
                 case 1:
