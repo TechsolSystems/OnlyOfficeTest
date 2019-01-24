@@ -28,13 +28,9 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Net;
-using System.Text.RegularExpressions;
 using System.Web;
-using System.Web.Caching;
 using System.Web.Configuration;
 using System.Web.UI;
-using ASC.Api.DocumentConverter;
 
 namespace OnlineEditorsExample
 {
@@ -54,6 +50,9 @@ namespace OnlineEditorsExample
             }
         }
 
+        /// <summary>
+        /// property comments added
+        /// </summary>
         private static long MaxFileSize
         {
             get
